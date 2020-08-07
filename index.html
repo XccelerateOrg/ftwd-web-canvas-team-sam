@@ -67,7 +67,15 @@
       async
       defer
     ></script>
+     <script
+      src="javascript/drawing-straight.js"
+      type="text/javascript"
+      async
+      defer
+    ></script>
     <script type="text/javascript" async defer>
+    currentFunction = new DrawingStraightLine(contextReal, contextDraft)
+
       $("#drawing-rectangle").click(() => {
         currentFunction = new DrawingRectangle(contextReal, contextDraft);
       });
